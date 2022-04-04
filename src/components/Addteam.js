@@ -37,12 +37,12 @@ export const  Addteam = () => {
                                 <div class="col-xl-6">
                                     <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label"
-                                            for="validationCustom01">Username
+                                            for="validationCustom01">Team Name
                                             <span class="text-danger">* </span>
                                         </label>
                                         <div class="col-lg-6">
                                             <input type="text" class="form-control" id="validationCustom01"
-                                                placeholder="Enter a username.." required="" />
+                                                placeholder="Enter a team.." required="" />
                                             <div class="invalid-feedback">
                                                 Please enter a username.
                                             </div>
@@ -50,12 +50,12 @@ export const  Addteam = () => {
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label"
-                                            for="validationCustom02">Email <span class="text-danger">*
+                                            for="validationCustom02">No Of Team Member <span class="text-danger">*
                                             </span>
                                         </label>
                                         <div class="col-lg-6">
                                             <input type="text" class="form-control" id="validationCustom02"
-                                                placeholder="Your valid email.." required="" />
+                                                placeholder="No of Team Member.." required="" />
                                             <div class="invalid-feedback">
                                                 Please enter a Email.
                                             </div>
@@ -63,12 +63,12 @@ export const  Addteam = () => {
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label"
-                                            for="validationCustom03">Password
+                                            for="validationCustom03">Technology
                                             <span class="text-danger">* </span>
                                         </label>
                                         <div class="col-lg-6">
                                             <input type="password" class="form-control"
-                                                id="validationCustom03" placeholder="Choose a safe one.."
+                                                id="validationCustom03" placeholder="Choose a Technology."
                                                 required="" />
                                             <div class="invalid-feedback">
                                                 Please enter a password.

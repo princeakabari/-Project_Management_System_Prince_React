@@ -40,9 +40,9 @@ export const Projects = () => {
                         <label className="form-check-label" htmlFor="checkAll" />
                       </div>
                     </th>
-                    <th><strong>ROLL NO. </strong></th>
-                    <th><strong>NAME </strong></th>
-                    <th><strong>Email </strong></th>
+                    <th><strong>Team NO. </strong></th>
+                    <th><strong>Projects </strong></th>
+                    <th><strong>Team </strong></th>
                     <th><strong>Date </strong></th>
                     <th><strong>Status </strong></th>
                     <th><strong /></th>

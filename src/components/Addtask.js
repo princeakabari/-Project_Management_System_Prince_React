@@ -5,7 +5,7 @@ export const  Addtask = () => {
       <nav className="navbar navbar-expand">
         <div className="collapse navbar-collapse justify-content-between">
           <div className="header-left">
-            <div className="dashboard_bar">Add User</div>
+            <div className="dashboard_bar">Add Task</div>
           </div>
         </div>
       </nav>
@@ -19,7 +19,7 @@ export const  Addtask = () => {
 <div class="row page-titles">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active"><Link to="/Home">Home</Link></li>
-            <li class="breadcrumb-item"><a>Add User </a></li>
+            <li class="breadcrumb-item"><a>Add Task </a></li>
         </ol>
     </div>
 
@@ -28,7 +28,7 @@ export const  Addtask = () => {
         <div class="col-lg-24">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Add New User </h4>
+                    <h4 class="card-title">Add New Task </h4>
                 </div>
                 <div class="card-body">
                     <div class="form-validation">
@@ -37,44 +37,31 @@ export const  Addtask = () => {
                                 <div class="col-xl-6">
                                     <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label"
-                                            for="validationCustom01">Username
+                                            for="validationCustom01">Task
                                             <span class="text-danger">* </span>
                                         </label>
                                         <div class="col-lg-6">
                                             <input type="text" class="form-control" id="validationCustom01"
-                                                placeholder="Enter a username.." required="" />
+                                                placeholder="Enter a Task.." required="" />
                                             <div class="invalid-feedback">
-                                                Please enter a username.
+                                                Please enter a Task.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label"
-                                            for="validationCustom02">Email <span class="text-danger">*
+                                            for="validationCustom02">Task Info <span class="text-danger">*
                                             </span>
                                         </label>
                                         <div class="col-lg-6">
                                             <input type="text" class="form-control" id="validationCustom02"
-                                                placeholder="Your valid email.." required="" />
+                                                placeholder="Task Info.." required="" />
                                             <div class="invalid-feedback">
                                                 Please enter a Email.
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label class="col-lg-4 col-form-label"
-                                            for="validationCustom03">Password
-                                            <span class="text-danger">* </span>
-                                        </label>
-                                        <div class="col-lg-6">
-                                            <input type="password" class="form-control"
-                                                id="validationCustom03" placeholder="Choose a safe one.."
-                                                required="" />
-                                            <div class="invalid-feedback">
-                                                Please enter a password.
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label"
                                             for="validationCustom04">Suggestions <span class="text-danger">*

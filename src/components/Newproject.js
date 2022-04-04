@@ -5,7 +5,7 @@ export const  Addteam = () => {
       <nav className="navbar navbar-expand">
         <div className="collapse navbar-collapse justify-content-between">
           <div className="header-left">
-            <div className="dashboard_bar">Add Team</div>
+            <div className="dashboard_bar">New Project List </div>
           </div>
         </div>
       </nav>
@@ -19,7 +19,7 @@ export const  Addteam = () => {
 <div class="row page-titles">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active"><Link to="/Home">Home</Link></li>
-            <li class="breadcrumb-item"><a>Add Team </a></li>
+            <li class="breadcrumb-item"><a>New Project </a></li>
         </ol>
     </div>
 

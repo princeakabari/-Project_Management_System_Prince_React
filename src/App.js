@@ -16,6 +16,10 @@ import Moduleslist from "./components/Moduleslist";
 import Addteam from "./components/Addteam";
 import Teamlist from "./components/Teamlist";
 import Newproject from "./components/Newproject";
+import Rolelist from "./components/Rolelist";
+
+import Addrole from "./components/Addrole";
+
 // import {Landingpage} from "./components/Landingpage";
 // import {Login} from "./components/Login";
 
@@ -41,8 +45,8 @@ export default function App() {
         <Route path="Moduleslist" element={<Moduleslist/>} />
         <Route path="Addteam" element={<Addteam/>} />
         <Route path="Teamlist" element={<Teamlist/>} />
-        <Route path="Addrole" element={<Teamlist/>} />
-        <Route path="Rolelist" element={<Teamlist/>} />
+        <Route path="Addrole" element={<Addrole/>} />
+        <Route path="Rolelist" element={<Rolelist/>} />
         <Route path="Newproject" element={<Newproject/>} />
         
 

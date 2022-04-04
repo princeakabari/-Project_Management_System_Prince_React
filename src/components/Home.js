@@ -18,8 +18,9 @@ export const Home = () => {
 
     <div className="content-body">
       <div className="container-fluid">
+
         <div className="row">
-          <div className="col-xl-24">
+        <div className="col-xl-24">
             <div className="row">
               <div className="col-xl-6 col-sm-6 col-xxl-12">
                 <div className="card bg-progradient manage-project">
@@ -41,6 +42,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
+          
+         
+        
+          
 
           <div className="col-xl-12">
 

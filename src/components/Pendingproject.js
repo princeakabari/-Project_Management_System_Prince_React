@@ -1,12 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 
-export const Moduleslist = () => {
+export const Pendingproject = () => {
   return <div><div className="header border-bottom">
     <div className="header-content">
       <nav className="navbar navbar-expand">
         <div className="collapse navbar-collapse justify-content-between">
           <div className="header-left">
-            <div className="dashboard_bar">Modules</div>
+            <div className="dashboard_bar">Pending Project</div>
           </div>
         </div>
       </nav>
@@ -17,7 +17,7 @@ export const Moduleslist = () => {
     <div className="row page-titles">
       <ol className="breadcrumb">
         <li className="breadcrumb-item active"><a href="/Home">Home </a></li>
-        <li className="breadcrumb-item"><a>Modules List</a></li> 
+        <li className="breadcrumb-item"><a>Team List</a></li> 
         
         
       </ol>
@@ -27,7 +27,7 @@ export const Moduleslist = () => {
       <div className="col-lg-12">
         <div className="card">
           <div className="card-header">
-            <h4 className="card-title">Modules List</h4>
+            <h4 className="card-title">Team List</h4>
           </div>
           <div className="card-body">
             <div className="table-responsive">
@@ -41,7 +41,7 @@ export const Moduleslist = () => {
                       </div>
                     </th>
                     <th><strong>ROLL NO. </strong></th>
-                    <th><strong>Modules</strong></th>
+                    <th><strong>Team</strong></th>
                     <th><strong>Email </strong></th>
                     <th><strong>Date </strong></th>
                     <th><strong>Status </strong></th>
@@ -139,4 +139,4 @@ export const Moduleslist = () => {
     ;
 };
 
-export default Moduleslist;
+export default Pendingproject;

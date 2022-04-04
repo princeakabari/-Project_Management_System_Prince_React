@@ -63,16 +63,7 @@ export const Projectdetails = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="kanbanimg1">
-                      <ul className="kanbanimg me-3 mb-3">
-                        <li><img src="images/profile/small/pic1.jpg" alt /></li>
-                        <li><img src="images/profile/small/pic2.jpg" alt /></li>
-                        <li><img src="images/profile/small/pic3.jpg" alt /></li>
-                        <li><img src="images/profile/small/pic4.jpg" alt /></li>
-                        <li><img src="images/profile/small/pic5.jpg" alt /></li>
-                        <li><span>5+ </span></li>
-                      </ul>
-                    </div>
+                    
                   </div>
                   <div className="col-xl-3 mt-4 col-sm-6">
                     <div className="d-flex">
