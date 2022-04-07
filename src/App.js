@@ -1,12 +1,11 @@
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter ,Route, Routes }from 'react-router-dom';
 import {Navbar}from "./components/Navbar";
 
 
-import {User} from "./components/User";
+import User from "./components/User";
 import {Projects} from "./components/Projects";
 import {Home} from "./components/Home";
-// import Adduser from "./components/Adduser";
 import Addprojects from "./components/Addprojects";
 import Projectdetails from "./components/Projectdetails";
 import Addtask from "./components/Addtask";
@@ -19,11 +18,13 @@ import Newproject from "./components/Newproject";
 import Rolelist from "./components/Rolelist";
 
 import Addrole from "./components/Addrole";
+import Edituser from "./components/Edituser";
+import Adduser from "./components/Adduser";
 
 
 
-// import {Landingpage} from "./components/Landingpage";
-// import {Login} from "./components/Login";
+
+
 
 
 export default function App() {
@@ -35,7 +36,7 @@ export default function App() {
         <Route path="Home" element={<Home />}/>      
           
         {/* <Route path="Login" element={<Login/>} /> */}
-        <Route path="User" element={<User/>} />
+        
         {/* <Route path="Adduser" element={<Adduser/>} /> */}
         <Route path="Addprojects" element={<Addprojects/>} />
         <Route path="Projects" element={<Projects/>} />
@@ -50,6 +51,11 @@ export default function App() {
         <Route path="Addrole" element={<Addrole/>} />
         <Route path="Rolelist" element={<Rolelist/>} />
         <Route path="Newproject" element={<Newproject/>} />
+
+
+        <Route path='User' element={<User/>}/>
+        <Route path='Adduser' element={<Adduser/>}/>
+        <Route path='Edituser' element={<Edituser/>}/>
         
        
       
