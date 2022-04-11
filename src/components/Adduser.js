@@ -5,6 +5,8 @@ import Userarray from './Userarray';
 import { v4 as uuid } from 'uuid';
 import { Link, useNavigate } from 'react-router-dom';
 
+
+
 function Adduser() {
 
     // Making usestate for setting and
@@ -12,6 +14,7 @@ function Adduser() {
     const [name, setname] = useState('');
     const [age, setage] = useState('');
     const [password, setpassword] = useState('');
+    
     // Using useNavigation for redirecting to pages
     let history = useNavigate();
 
@@ -25,11 +28,13 @@ function Adduser() {
         // Fetching a value from usestate and 
         // pushing to javascript object
         let a = name, b = age, c = password
-        Userarray.push({ id: uni, Name: a, Age: b, Password: c })
+        Userarray.push({ id: uni, Name: a, Age: b, Password: c });
 
 
         // Redirecting to home page after creation done
         history('/User')
+
+    
 
     }
 
@@ -66,11 +71,14 @@ function Adduser() {
                 {/* handing a onclick event in button for
      firing a function */}
                 <Link className="d-grid gap-" to='/User'>
-                    <Button
+                    <Button  
+                    
                         onClick={e => handelSubmit(e)}
                         variant="primary" type="submit">
-                        Submit
+                        Add User
                     </Button>
+
+                    
                 </Link>
                 {/* Redirecting back to home page */}
                 <Link className="d-grid gap-2" to='/User'>

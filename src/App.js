@@ -20,6 +20,7 @@ import Rolelist from "./components/Rolelist";
 import Addrole from "./components/Addrole";
 import Edituser from "./components/Edituser";
 import Adduser from "./components/Adduser";
+import Login from "./components/Login";
 
 
 
@@ -32,7 +33,7 @@ export default function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}>         
+        <Route path="/" element={<Navbar /> }>         
         <Route path="Home" element={<Home />}/>      
           
         {/* <Route path="Login" element={<Login/>} /> */}
@@ -56,6 +57,7 @@ export default function App() {
         <Route path='User' element={<User/>}/>
         <Route path='Adduser' element={<Adduser/>}/>
         <Route path='Edituser' element={<Edituser/>}/>
+        <Route path='Login' element={<Login/>} exact />
         
        
       
