@@ -22,7 +22,7 @@ export const Home = () => {
         <div className="row">
         <div className="col-xl-24">
             <div className="row">
-              <div className="col-xl-6 col-sm-6 col-xxl-12">
+              <div className="col-xl-12 col-sm-12 col-xxl-12">
                 <div className="card bg-progradient manage-project">
                   <div className="card-body">
                     <div className="row align-items-center">

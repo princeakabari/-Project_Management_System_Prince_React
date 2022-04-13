@@ -14,7 +14,7 @@ function Adduser() {
     const [name, setname] = useState('');
     const [age, setage] = useState('');
     const [password, setpassword] = useState('');
-    
+
     // Using useNavigation for redirecting to pages
     let history = useNavigate();
 
@@ -34,62 +34,72 @@ function Adduser() {
         // Redirecting to home page after creation done
         history('/User')
 
-    
+
 
     }
 
     return (
-        
-       <div>
+
+        <div>
+            <div className="header border-bottom">
+            <div className="header-content">
+                <nav className="navbar navbar-expand">
+                    <div className="collapse navbar-collapse justify-content-between">
+                        <div className="header-left">
+                            <div className="dashboard_bar">Add User</div>
+                        </div>
+                    </div>
+                </nav>
+            </div></div>
             <div className="content-body">
-           
-            <Form className="d-grid gap-2" style={{ margin: '5rem' }}>
 
-                {/* Fetching a value from input textfirld 
+                <Form className="d-grid gap-2" style={{ margin: '5rem' }}>
+
+                    {/* Fetching a value from input textfirld 
    in a setname using usestate*/}
-                <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Control onChange={e => setname(e.target.value)}
-                        type="text"
-                        placeholder="Enter Name" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Control onChange={e => setname(e.target.value)}
+                            type="text"
+                            placeholder="Enter Name" required />
+                    </Form.Group>
 
 
-                {/* Fetching a value from input textfirld in
+                    {/* Fetching a value from input textfirld in
      a setage using usestate*/}
-                <Form.Group className="mb-3" controlId="formBasicAge">
-                    <Form.Control onChange={e => setage(e.target.value)}
-                        type="text"
-                        placeholder="Age" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicAge">
+                        <Form.Control onChange={e => setage(e.target.value)}
+                            type="text"
+                            placeholder="Age" required />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control onChange={e => setpassword(e.target.value)}
-                        type="text"
-                        placeholder="Password" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control onChange={e => setpassword(e.target.value)}
+                            type="text"
+                            placeholder="Password" required />
+                    </Form.Group>
 
-                {/* handing a onclick event in button for
+                    {/* handing a onclick event in button for
      firing a function */}
-                <Link className="d-grid gap-" to='/User'>
-                    <Button  
-                    
-                        onClick={e => handelSubmit(e)}
-                        variant="primary" type="submit">
-                        Add User
-                    </Button>
+                    <Link className="d-grid gap-" to='/User'>
+                        <Button
 
-                    
-                </Link>
-                {/* Redirecting back to home page */}
-                <Link className="d-grid gap-2" to='/User'>
-                    <Button variant="info" size="lg">
-                        Home
-                    </Button>
-                </Link>
+                            onClick={e => handelSubmit(e)}
+                            variant="primary" type="submit">
+                            Add User
+                        </Button>
 
-            </Form>
+
+                    </Link>
+                    {/* Redirecting back to home page */}
+                    <Link className="d-grid gap-2" to='/User'>
+                        <Button variant="info" size="lg">
+                            Home
+                        </Button>
+                    </Link>
+
+                </Form>
             </div>
-          
+
         </div>
     )
 }

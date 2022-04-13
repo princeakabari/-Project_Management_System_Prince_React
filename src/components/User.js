@@ -32,53 +32,56 @@ function User() {
   }
 
   return (
-    <div className="content-body">
-      <div style={{ margin: '5rem' }}>
-        <Table striped bordered hover size="sm">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Password</th>
+  
+    
 
-            </tr>
-          </thead>
-          <tbody>
+      <div className="content-body">
+        <div style={{ margin: '5rem' }}>
+          <Table striped bordered hover size="sm">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Password</th>
 
-            {/* Mapping though every element in the array
+              </tr>
+            </thead>
+            <tbody>
+
+              {/* Mapping though every element in the array
     and showing the data in the form of table */}
-            {Userarray.map((item) => {
-              return (
+              {Userarray.map((item) => {
+                return (
 
-                <tr>
-                  <td>{item.Name}</td>
-                  <td>{item.Age}</td>
-                  <td>{item.Password}</td>
+                  <tr>
+                    <td>{item.Name}</td>
+                    <td>{item.Age}</td>
+                    <td>{item.Password}</td>
 
-                  {/* getting theid,name, and age for storing these
+                    {/* getting theid,name, and age for storing these
           value in the jsx with onclick event */}
-                  <td><Link to={`/Edituser`}><Button onClick={(e) =>
-                    setID(item.id, item.Name, item.Age, item.Password)} variant="info">
-                    Update</Button></Link></td>
+                    <td><Link to={`/Edituser`}><Button onClick={(e) =>
+                      setID(item.id, item.Name, item.Age, item.Password)} variant="info">
+                      Update</Button></Link></td>
 
-                  {/* Using thr deleted function passing
+                    {/* Using thr deleted function passing
        the id of an entry */}
-                  <td><Button onClick={e => deleted(item.id)}
-                    variant="danger">Delete</Button></td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </Table>
+                    <td><Button onClick={e => deleted(item.id)}
+                      variant="danger">Delete</Button></td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </Table>
 
-        {/* Button for redirecting to create page for
+          {/* Button for redirecting to create page for
    insertion of values */}
-        <Link className="d-grid gap-2" to='/Adduser'>
-          <Button variant="warning" size="lg">Add User</Button>
-        </Link>
+          <Link className="d-grid gap-2" to='/Adduser'>
+            <Button variant="warning" size="lg">Add User</Button>
+          </Link>
+        </div>
       </div>
-    </div>
-  )
+      )
 }
 
-export default User
+      export default User

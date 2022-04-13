@@ -4,7 +4,7 @@ import {Navbar}from "./components/Navbar";
 
 
 import User from "./components/User";
-import {Projects} from "./components/Projects";
+import Projects from "./components/Projects";
 import {Home} from "./components/Home";
 import Addprojects from "./components/Addprojects";
 import Projectdetails from "./components/Projectdetails";
@@ -18,9 +18,10 @@ import Newproject from "./components/Newproject";
 import Rolelist from "./components/Rolelist";
 
 import Addrole from "./components/Addrole";
-import Edituser from "./components/Edituser";
+import EditUser from "./components/EditUser";
 import Adduser from "./components/Adduser";
 import Login from "./components/Login";
+import EditProjects from "./components/EditProjects";
 
 
 
@@ -56,8 +57,9 @@ export default function App() {
 
         <Route path='User' element={<User/>}/>
         <Route path='Adduser' element={<Adduser/>}/>
-        <Route path='Edituser' element={<Edituser/>}/>
+        <Route path='EditUser' element={<EditUser/>}/>
         <Route path='Login' element={<Login/>} exact />
+        <Route path='EditProjects' element={<EditProjects/>}  />
         
        
       

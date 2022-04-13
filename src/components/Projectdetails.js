@@ -15,6 +15,7 @@ export const Projectdetails = () => {
 
     
     <div className="content-body">
+      
   <div className="container-fluid">
     <div className="row">
       <div className="col-xl-12">
@@ -97,126 +98,13 @@ export const Projectdetails = () => {
                 <div className="project-description">
                   <span className="fs-18 font-w500 mb-3 d-block">PROJECT DESCRIPTION </span>
                   <p className="fs-18 font-w500">
-                    "Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod
-                    tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim
-                    veniam, ____ nostrud exercitation ullamco laboris ____ ut aliquip ex ea
-                    _______ consequat. Duis aute irure _____ in reprehenderit in voluptate
-                    _____ esse cillum dolore eu ______ nulla pariatur. Excepteur sint
-                    ________ cupidatat non proident, sunt __ culpa qui officia deserunt
-                    ______ anim id est laborum."
+                   
+
                   </p>
-                  <span className="fs-18 font-w500 my-4 d-block">Section 1.10.32 of "de _______
-                    Bonorum et Malorum", written __ Cicero in 45 BC </span>
-                  <p className="fs-18 font-w500">
-                    "Sed ut perspiciatis unde _____ iste natus error sit __________
-                    accusantium doloremque laudantium, totam ___ aperiam, eaque ipsa quae __
-                    illo inventore veritatis et _____ architecto beatae vitae dicta ____
-                    explicabo. Nemo enim ipsam __________ quia voluptas sit aspernatur ___
-                    odit aut fugit, sed ____ consequuntur magni dolores eos ___ ratione
-                    voluptatem sequi nesciunt. _____ porro quisquam est, qui _______ ipsum
-                    quia dolor sit ____, consectetur, adipisci velit, sed ____ non numquam
-                    eius modi _______ incidunt ut labore et ______ magnam aliquam quaerat
-                    voluptatem. __ enim ad minima veniam, ____ nostrum exercitationem ullam
-                    corporis ________ laboriosam, nisi ut aliqui
-                  </p>
+                  
                 </div>
-                <div className="message1">
-                  <textarea className="form-control" id="exampleFormControlTextarea1" rows={4} placeholder="Type comment here..." defaultValue={""} />
-                  <div className="msg-button">
-                    <i className="fas fa-smile me-3 " />
-                    <i className="fas fa-paperclip me-3" />
-                    <a href="javascript:void(0);" className="btn btn-primary"><i className="fas fa-paper-plane me-2 text-white fs-18 btn-rounded" />SEND
-                    </a>
-                  </div>
-                </div>
-                <div className="comments">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <span className="text-uppercase fs-18 font-w500">comment </span>
-                    <div>
-                      <select className="default-select dashboard-select">
-                        <option data-display="Newest Comment">Newest Comment
-                        </option><option value={2}>Oldest Comment
-                        </option></select>
-                    </div>
-                  </div>
-                </div>
-                <div className="user-comment row border-bottom pb-3 align-items-center">
-                  <div className="col-lg-9">
-                    <div className="d-flex align-items-center">
-                      <img src="images/pic1.jpg" />
-                      <div className="ms-3">
-                        <h4 className="fs-18 font-w600">Kevin Sirait </h4>
-                        <span className="fs-16">Lorem ipsum dolor sit ____, consectetur
-                          adipiscing elit, sed __ eiusmod </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 d-flex justify-content-end">
-                    <div className="like-reply">
-                      <span className="fs-18 font-w600 me-2"><i className="far fa-thumbs-up text-primary me-2" />45 Like
-                      </span>
-                      <span className="fs-18 font-w600"><i className="fas fa-reply-all me-2 text-blue" />Reply </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="user-comment row border-bottom pb-3 align-items-center">
-                  <div className="col-lg-9">
-                    <div className="d-flex align-items-start">
-                      <img src="images/pic2.jpg" />
-                      <div className="ms-3">
-                        <h4 className="fs-18 font-w600">Hendric Suneo </h4>
-                        <span className="fs-16">Nemo enim ipsam voluptatem ____ voluptas sit
-                          aspernatur aut ____ aut fugit, sed quia ____________ magni
-                          dolores eos qui _______ voluptatem sequi nesciunt. Neque
-                          _____ quisquam est, qui dolorem _____ quia dolor sit amet,
-                          ___________, adipisci velit, sed quia ___ numquam eius modi
-                          tempora ________ ut labore et dolore ______ aliquam quaerat
-                          voluptatem. Ut ____ ad minima ve </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 d-flex justify-content-end">
-                    <div className="like-reply">
-                      <span className="fs-18 font-w600 me-2"><i className="far fa-thumbs-up text-primary me-2" />45 Like
-                      </span>
-                      <span className="fs-18 font-w600"><i className="fas fa-reply-all me-2 text-blue" />Reply </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="user-comment row border-bottom pb-3 align-items-center">
-                  <div className="col-lg-9">
-                    <div className="d-flex align-items-start ms-5">
-                      <img src="images/pic2.jpg" />
-                      <div className="ms-3">
-                        <h4 className="fs-18 font-w600">Kesha Jean </h4>
-                        <span className="fs-16">m quia dolor sit ____, consectetur, adipisci
-                          velit, sed ____ non numquam eius modi _______ incidunt ut
-                          labore et ______ magnam aliquam quaerat voluptatem. __ enim
-                          ad minima ve </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 d-flex justify-content-end">
-                    <div className="like-reply">
-                      <span className="fs-18 font-w600 me-2"><i className="fas fa-star text-orange" /></span>
-                      <span className="fs-18 font-w600"><i className="fas fa-star text-orange" /></span>
-                    </div>
-                  </div>
-                </div>
-                <div className="user-comment row border-bottom pb-3 align-items-center">
-                  <div className="col-lg-9">
-                    <div className="d-flex align-items-start ms-5">
-                      <img src="images/pic3.jpg" />
-                      <div className="ms-3">
-                        <h4 className="fs-18 font-w600">Kesha Jean </h4>
-                        <span className="fs-16">m quia dolor sit ____, consectetur, adipisci
-                          velit, sed ____ non numquam eius modi _______ incidunt ut
-                          labore et ______ magnam aliquam quaerat voluptatem. __ enim
-                          ad minima ve </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
+                
               </div>
             </div>
           </div>
