@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Table } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Userarray from './Userarray';
+import Projectsarrary from './Projectsarrary';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Projects() {
@@ -22,10 +22,10 @@ function Projects() {
   // for deleting the entry
   function deleted(id) {
 
-    var index = Userarray.map(function (e) { return e.id; }).indexOf(id);
+    var index = Projectsarrary.map(function (e) { return e.id; }).indexOf(id);
 
     // deleting the entry with index
-    Userarray.splice(index, 1)
+    Projectsarrary.splice(index, 1)
 
     // We need to re-render the page for getting 
     // the results so redirect to same page.
@@ -77,7 +77,7 @@ function Projects() {
 
                       {/* Mapping though every element in the array
     and showing the data in the form of table */}
-                      {Userarray.map((item) => {
+                      {Projectsarrary.map((item) => {
                         return (
 
                           <tr>

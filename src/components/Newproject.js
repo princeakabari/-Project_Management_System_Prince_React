@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Table } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Userarray from './Userarray';
+import Projectsarrary from './Projectsarrary';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Projects() {
@@ -22,10 +22,10 @@ function Projects() {
   // for deleting the entry
   function deleted(id) {
 
-    var index = Userarray.map(function (e) { return e.id; }).indexOf(id);
+    var index = Projectsarrary.map(function (e) { return e.id; }).indexOf(id);
 
     // deleting the entry with index
-    Userarray.splice(index, 1)
+    Projectsarrary.splice(index, 1)
 
     // We need to re-render the page for getting 
     // the results so redirect to same page.
@@ -56,7 +56,7 @@ function Projects() {
 
 
         <div class="row">
-          <div class="col-xl-4 col-xxl-6 col-lg-6">
+          <div class="col">
             <div class="card border-0 pb-0">
               <div class="card-header border-0 pb-0">
                 <h4 class="card-title">New Project </h4>
@@ -66,7 +66,7 @@ function Projects() {
               <div class="card-body">
                 <div id="DZ_W_Todo3" class="widget-media dlab-scroll ">
                   <ul class="timeline">
-                  {Userarray.map((item) => {
+                  {Projectsarrary.map((item) => {
                         return (
                     <li>
                       <div class="timeline-panel">

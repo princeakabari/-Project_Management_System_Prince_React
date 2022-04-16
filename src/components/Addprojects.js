@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Userarray from './Userarray';
+import Projectsarrary from './Projectsarrary';
 import { v4 as uuid } from 'uuid';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ function Addprojects() {
         // Fetching a value from usestate and 
         // pushing to javascript object
         let a = ProjectName, b = ProjectDescription, c = ProjectTechnology, d = Suggestions
-        Userarray.push({ id: uni, ProjectName: a, ProjectDescription: b, ProjectTechnology: c, Suggestions: d });
+        Projectsarrary.push({ id: uni, ProjectName: a, ProjectDescription: b, ProjectTechnology: c, Suggestions: d });
 
 
         // Redirecting to home page after creation done

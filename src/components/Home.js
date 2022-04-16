@@ -9,7 +9,7 @@ export const Home = () => {
             <div className="dashboard_bar">Dashboard</div>
           </div>
 
-          <Link type="button" className="btn btn-secondary" to="/login">Logout </Link>
+          <Link type="button" className="btn btn-danger" to="/login">Logout </Link>
 
         </div>
       </nav>

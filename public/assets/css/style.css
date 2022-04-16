@@ -492,7 +492,8 @@ figure {
 
 img,
 svg {
-	vertical-align: middle
+	vertical-align: middle;
+	height:50px
 }
 
 table {
@@ -7430,6 +7431,9 @@ fieldset:disabled .btn {
 
 .mt-1 {
 	margin-top: .25rem!important
+}
+.mt-100 {
+	margin-top: 100px!important
 }
 
 .mt-2 {
@@ -40922,4 +40926,8 @@ html[dir=rtl] [direction=rtl][data-sidebar-style=compact]:not([data-layout=horiz
 
 [data-theme-version=dark] .footer .copyright p {
 	color: #fff
+}
+
+.logo{
+	height: 102px;
 }

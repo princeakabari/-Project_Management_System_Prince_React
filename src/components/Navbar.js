@@ -49,8 +49,7 @@ export const Navbar = () => {
                      <li> <Link className="nav-text" to="/Addprojects">Add Projects</Link></li>
                     <li><Link className="nav-text" to="/Projects">Project List</Link></li>
                     <li><Link className="nav-text" to="/Projectdetails">Project Details</Link></li>
-                    <li><Link className="nav-text" to="/Pendingproject">Pending Project</Link></li>
-                    <li><Link className="nav-text" to="/Completeproject">Complete Project</Link></li>
+                    
                     
                   </ul>
                 </li>
@@ -122,7 +121,7 @@ export const Navbar = () => {
                     <li>
                       <Link className="nav-text" to="Addtask">Add Task</Link></li>
 
-                    <li><Link className="nav-text" to="Tasklist">Task List</Link></li>
+                    <li><Link className="nav-text" to="Task">Task List</Link></li>
 
                   </ul>
                 </li>

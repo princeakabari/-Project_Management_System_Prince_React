@@ -9,7 +9,7 @@ import {Home} from "./components/Home";
 import Addprojects from "./components/Addprojects";
 import Projectdetails from "./components/Projectdetails";
 import Addtask from "./components/Addtask";
-import Tasklist from "./components/Tasklist";
+import Task from "./components/Task";
 import Addmodules from "./components/Addmodules";
 import Moduleslist from "./components/Moduleslist";
 import Addteam from "./components/Addteam";
@@ -22,6 +22,7 @@ import EditUser from "./components/EditUser";
 import Adduser from "./components/Adduser";
 import Login from "./components/Login";
 import EditProjects from "./components/EditProjects";
+import EditTask from "./components/Edittask";
 
 
 
@@ -45,7 +46,7 @@ export default function App() {
         <Route path="Projectdetails" element={<Projectdetails/>} />
         {/* <Route path="Landingpage" element={<Landingpage/>} /> */}
         <Route path="Addtask" element={<Addtask/>} />
-        <Route path="Tasklist" element={<Tasklist/>} />
+        <Route path="Task" element={<Task/>} />
         <Route path="Addmodules" element={<Addmodules/>} />
         <Route path="Moduleslist" element={<Moduleslist/>} />
         <Route path="Addteam" element={<Addteam/>} />-
@@ -60,6 +61,7 @@ export default function App() {
         <Route path='EditUser' element={<EditUser/>}/>
        
         <Route path='EditProjects' element={<EditProjects/>}  />
+        <Route path='Edittask' element={<EditTask/>}  />
         
        
       
