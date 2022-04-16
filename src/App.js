@@ -48,7 +48,7 @@ export default function App() {
         <Route path="Tasklist" element={<Tasklist/>} />
         <Route path="Addmodules" element={<Addmodules/>} />
         <Route path="Moduleslist" element={<Moduleslist/>} />
-        <Route path="Addteam" element={<Addteam/>} />
+        <Route path="Addteam" element={<Addteam/>} />-
         <Route path="Teamlist" element={<Teamlist/>} />
         <Route path="Addrole" element={<Addrole/>} />
         <Route path="Rolelist" element={<Rolelist/>} />
@@ -58,14 +58,14 @@ export default function App() {
         <Route path='User' element={<User/>}/>
         <Route path='Adduser' element={<Adduser/>}/>
         <Route path='EditUser' element={<EditUser/>}/>
-        <Route path='Login' element={<Login/>} exact />
+       
         <Route path='EditProjects' element={<EditProjects/>}  />
         
        
       
         
 
-        </Route>
+        </Route> <Route path='Login' element={<Login/>} />
       </Routes>
     </BrowserRouter>
   );
