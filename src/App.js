@@ -1,18 +1,20 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter ,Route, Routes }from 'react-router-dom';
 import {Navbar}from "./components/Navbar";
+import {Usernavbar}from "./components/Usernavbar";
 
 
 import User from "./components/User";
 import Projects from "./components/Projects";
 import {Home} from "./components/Home";
+import {Userhome} from "./components/Userhome";
 import Addprojects from "./components/Addprojects";
 import Projectdetails from "./components/Projectdetails";
 import Addtask from "./components/Addtask";
 import Task from "./components/Task";
 import Addmodules from "./components/Addmodules";
 import Moduleslist from "./components/Moduleslist";
-import Addteam from "./components/Addteam";
+import AddTeam from "./components/AddTeam";
 import Teamlist from "./components/Teamlist";
 import Newproject from "./components/Newproject";
 import Rolelist from "./components/Rolelist";
@@ -23,6 +25,8 @@ import Adduser from "./components/Adduser";
 import Login from "./components/Login";
 import EditProjects from "./components/EditProjects";
 import EditTask from "./components/Edittask";
+import { Adminlogin } from "./components/Adminlogin";
+import Landing from "./components/Landing";
 
 
 
@@ -49,7 +53,7 @@ export default function App() {
         <Route path="Task" element={<Task/>} />
         <Route path="Addmodules" element={<Addmodules/>} />
         <Route path="Moduleslist" element={<Moduleslist/>} />
-        <Route path="Addteam" element={<Addteam/>} />-
+        <Route path="AddTeam" element={<AddTeam/>} />-
         <Route path="Teamlist" element={<Teamlist/>} />
         <Route path="Addrole" element={<Addrole/>} />
         <Route path="Rolelist" element={<Rolelist/>} />
@@ -65,11 +69,17 @@ export default function App() {
         
        
       
-        
+         
 
         </Route> <Route path='Login' element={<Login/>} />
+       <Route path="/Userhome" element={<Userhome /> }></Route>
+       <Route path="/Usernavbar" element={<Usernavbar /> }></Route>
+       <Route path="/Adminlogin" element={<Adminlogin /> }></Route>
+       <Route path="/Landing" element={<Landing /> }></Route>
+
       </Routes>
     </BrowserRouter>
+    
   );
 }
 ReactDOM.render(<App />, document.getElementById("root"));

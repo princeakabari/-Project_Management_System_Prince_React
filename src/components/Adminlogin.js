@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-export const Login = () => {
+export const Adminlogin = () => {
   return (
     <div className="authincation h-100">
       <div className="container h-100">
@@ -14,8 +14,8 @@ export const Login = () => {
                         <img className="" src="assets/images/logo.png" alt />
                       </a>
                     </div>
-                    <h4 className="text-center mb-4">Sign in your account </h4>
-                    <form action="/Userhome">
+                    <h4 className="text-center mb-4">Admin Login</h4>
+                    <form action="/Home">
                      
                       <div className="mb-3">
                         <label className="mb-1">
@@ -62,4 +62,4 @@ export const Login = () => {
   );
 };
 
-export default Login;
+export default Adminlogin;

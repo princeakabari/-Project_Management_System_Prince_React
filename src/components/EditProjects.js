@@ -55,7 +55,7 @@ function EditProjects() {
             <nav className="navbar navbar-expand">
                 <div className="collapse navbar-collapse justify-content-between">
                     <div className="header-left">
-                        <div className="dashboard_bar">Add Projects</div>
+                        <div className="dashboard_bar">Edit Project</div>
                     </div>
                 </div>
             </nav>
@@ -69,7 +69,7 @@ function EditProjects() {
                 <div class="row page-titles">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item active"><a href="/Home">Home </a></li>
-                        <li class="breadcrumb-item"><a>Edit Projects</a></li>
+                        <li class="breadcrumb-item"><a>Edit Project</a></li>
                     </ol>
                 </div>
 
@@ -111,8 +111,10 @@ function EditProjects() {
                                     <Button to='/Projects'
                                         onClick={e => handelSubmit(e)}
                                         variant="primary" type="submit" size="lg">
-                                        Update
+                                        Update Project
                                     </Button>
+                                    
+
 
 
                                     {/* Redirecting to main page after editing */}

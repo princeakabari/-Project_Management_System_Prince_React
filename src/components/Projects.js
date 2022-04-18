@@ -31,7 +31,8 @@ function Projects() {
     // the results so redirect to same page.
     history('/Projects')
   }
-  return <div><div className="header border-bottom">
+  return <div>
+    <div className="header border-bottom">
     <div className="header-content">
       <nav className="navbar navbar-expand">
         <div className="collapse navbar-collapse justify-content-between">
