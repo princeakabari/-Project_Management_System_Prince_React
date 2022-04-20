@@ -12,7 +12,7 @@ function Adduser() {
     // Making usestate for setting and
     // fetching a value in jsx
     const [name, setname] = useState('');
-    const [age, setage] = useState('');
+    const [role, setrole] = useState('');
     const [password, setpassword] = useState('');
 
     // Using useNavigation for redirecting to pages
@@ -27,8 +27,8 @@ function Adduser() {
 
         // Fetching a value from usestate and 
         // pushing to javascript object
-        let a = name, b = age, c = password
-        Userarray.push({ id: uni, Name: a, Age: b, Password: c });
+        let a = name, b = role, c = password
+        Userarray.push({ id: uni, Name: a, role: b, Password: c });
 
 
         // Redirecting to home page after creation done
@@ -56,8 +56,9 @@ function Adduser() {
                 <Form className="d-grid gap-2" style={{ margin: '5rem' }}>
 
                     {/* Fetching a value from input textfirld 
-   in a setname using usestate*/}
+   in a setname using usestate*/}                        <h5>Name: </h5>
                     <Form.Group className="mb-3" controlId="formBasicName">
+
                         <Form.Control onChange={e => setname(e.target.value)}
                             type="text"
                             placeholder="Enter Name" required />
@@ -65,12 +66,14 @@ function Adduser() {
 
 
                     {/* Fetching a value from input textfirld in
-     a setage using usestate*/}
-                    <Form.Group className="mb-3" controlId="formBasicAge">
-                        <Form.Control onChange={e => setage(e.target.value)}
+     a setage using usestate*/} <h5>Role: </h5>
+                    <Form.Group className="mb-3" controlId="formBasicrole">
+                   
+                        <Form.Control onChange={e => setrole(e.target.value)}
                             type="text"
-                            placeholder="Age" required />
+                            placeholder="role" required />
                     </Form.Group>
+                    <h5>Password: </h5>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control onChange={e => setpassword(e.target.value)}

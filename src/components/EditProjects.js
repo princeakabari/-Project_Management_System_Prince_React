@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Userarray from './Userarray';
+import Projectsarrary from './Projectsarrary';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -20,14 +20,14 @@ function EditProjects() {
     let history = useNavigate()
 
     // getting an index of an entry with an id
-    var index = Userarray.map(function (e) { return e.id; }).indexOf(id);
+    var index = Projectsarrary.map(function (e) { return e.id; }).indexOf(id);
 
     // function for handling the edit and 
     // pushing changes of editing/updating
     const handelSubmit = (e) => {
         e.preventDefault(); // preventing from reload
 
-        let a = Userarray[index] // getting an index of an array
+        let a = Projectsarrary[index] // getting an index of an array
 
         // putting the value from the input textfield and
         // replacing it from existing for updation
@@ -43,9 +43,9 @@ function EditProjects() {
 
     // Useeffect take care that page will be rendered only once
     useEffect(() => {
-        setProjectName(localStorage.getItem('ProjectName'))
-        setProjectDescription(localStorage.getItem('ProjectDescription'))
         setid(localStorage.getItem('id'))
+        setProjectName(localStorage.getItem('ProjectName'))
+        setProjectDescription(localStorage.getItem('ProjectDescription'))        
         setProjectTechnology(localStorage.getItem('ProjectTechnology'))
         setSuggestions(localStorage.getItem('Suggestions'))
     }, [])
@@ -84,6 +84,7 @@ function EditProjects() {
 
                                     {/* setting a name from the input textfiled */}
                                     <Form.Group className="mb-3" controlId="formBasicProjectName">
+                                        <h5>Project Name</h5>
                                         <Form.Control value={ProjectName}
                                             onChange={e => setProjectName(e.target.value)}
                                             type="text" placeholder="Enter Project Name" />
@@ -91,17 +92,20 @@ function EditProjects() {
 
                                     {/* setting a age from the input textfiled */}
                                     <Form.Group className="mb-3" controlId="formBasicProjectDescription">
+                                    <h5>Project Description</h5>
                                         <Form.Control value={ProjectDescription}
                                             onChange={e => setProjectDescription(e.target.value)}
                                             type="text" placeholder="Enter Project Description" />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formBasicProjectTechnology">
+                                    <h5>Project Technology</h5>
                                         <Form.Control value={ProjectTechnology}
                                             onChange={e => setProjectTechnology(e.target.value)}
                                             type="text" placeholder=" Enter Project Technology" />
                                     </Form.Group>
-                                    <Form.Group className="mb-3" controlId="formBasicProjectTechnology">
+                                    <Form.Group className="mb-3" controlId="formBasicSuggestions">
+                                    <h5>Suggestions</h5>
                                         <Form.Control value={Suggestions}
                                             onChange={e => setSuggestions(e.target.value)}
                                             type="text" placeholder=" Enter Suggestions" />

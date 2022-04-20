@@ -28,7 +28,7 @@ function Rolelist() {
 
     // We need to re-render the page for getting 
     // the results so redirect to same page.
-    history('/Projects')
+    history('/Rolelist')
   }
   return <div>
     <div className="header border-bottom">

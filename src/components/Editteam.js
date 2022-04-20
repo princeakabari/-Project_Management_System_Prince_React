@@ -83,25 +83,31 @@ function Editteam() {
                                 <Form className="d-grid gap-2" style={{ margin: '5rem' }}>
 
                                     {/* setting a name from the input textfiled */}
+                                    
                                     <Form.Group className="mb-3" controlId="formBasicTeamName">
+                                        <h5>Team Name:</h5>
                                         <Form.Control value={TeamName}
                                             onChange={e => setTeamName(e.target.value)}
                                             type="text" placeholder="Enter Team Name" />
                                     </Form.Group>
 
                                     {/* setting a age from the input textfiled */}
+                                    
                                     <Form.Group className="mb-3" controlId="formBasicTeamMember">
+                                    <h5>Team Member:</h5>
                                         <Form.Control value={TeamMember}
                                             onChange={e => setTeamMember(e.target.value)}
                                             type="text" placeholder="Enter Team Member" />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formBasicTechnology">
+                                    <h5>Team Technology:</h5>
                                         <Form.Control value={Technology}
                                             onChange={e => setTechnology(e.target.value)}
                                             type="text" placeholder=" Enter Team Technology" />
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicTeamSuggestions">
+                                    <h5>Suggestions:</h5>
                                         <Form.Control value={ TeamSuggestions}
                                             onChange={e => setTeamSuggestions(e.target.value)}
                                             type="text" placeholder=" Enter Team Suggestions" />

@@ -93,7 +93,7 @@ function Teamlist() {
 
                             
                             <td><Link to={`/Editteam`}><Button onClick={(e) =>
-                              setID(item.id, item.RoleName, item.RoleDescription)} variant="success">
+                              setID(item.id, item.TeamName, item.TeamMember, item.Technology,item.TeamSuggestions )} variant="success">
                               Update</Button></Link></td>
 
                            

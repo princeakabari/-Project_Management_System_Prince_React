@@ -23,11 +23,14 @@ function Addprojects() {
         e.preventDefault();  // Prevent reload
 
         const ids = uuid() // Creating unique id
-        let uni = ids.slice(0, 8) // Slicing unique id
+        let uni = ids.slice(0, 4) // Slicing unique id
 
         // Fetching a value from usestate and 
         // pushing to javascript object
-        let a = ProjectName, b = ProjectDescription, c = ProjectTechnology, d = Suggestions
+        let a = ProjectName, 
+        b = ProjectDescription, 
+        c = ProjectTechnology, 
+        d = Suggestions
         Projectsarrary.push({ id: uni, ProjectName: a, ProjectDescription: b, ProjectTechnology: c, Suggestions: d });
 
 
@@ -77,7 +80,7 @@ function Addprojects() {
                                                         <span class="text-danger">* </span>
                                                     </label>
                                                     <div class="col-lg-6">
-                                                        <Form.Group className="mb-3" controlId="formBasicName">
+                                                        <Form.Group className="mb-3" controlId="formBasicProjectName">
                                                             <Form.Control onChange={e => setProjectName(e.target.value)}
                                                                 type="text"
                                                                 placeholder="Enter Project Name" required />
@@ -91,7 +94,7 @@ function Addprojects() {
                                                         </span>
                                                     </label>
                                                     <div class="col-lg-6">
-                                                        <Form.Group className="mb-3" controlId="formBasicName">
+                                                        <Form.Group className="mb-3" controlId="formBasicProjectDescription">
                                                             <Form.Control onChange={e => setProjectDescription(e.target.value)}
                                                                 type="text"
                                                                 placeholder="Enter Description" required />
@@ -104,7 +107,7 @@ function Addprojects() {
                                                         <span class="text-danger">* </span>
                                                     </label>
                                                     <div class="col-lg-6">
-                                                        <Form.Group className="mb-3" controlId="formBasicName">
+                                                        <Form.Group className="mb-3" controlId="formBasicProjectTechnology">
                                                             <Form.Control onChange={e => setProjectTechnology(e.target.value)}
                                                                 type="text"
                                                                 placeholder="Enter Project Technology" required />
@@ -117,7 +120,7 @@ function Addprojects() {
                                                         </span>
                                                     </label>
                                                     <div class="col-lg-6">
-                                                        <Form.Group className="mb-3" controlId="formBasicName">
+                                                        <Form.Group className="mb-3" controlId="formBasicSuggestions">
                                                             <Form.Control onChange={e => setSuggestions(e.target.value)}
                                                                 type="text"
                                                                 placeholder="Enter Suggestions" required />

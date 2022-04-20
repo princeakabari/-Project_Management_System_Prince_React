@@ -51,7 +51,7 @@ function Editrole() {
             <nav className="navbar navbar-expand">
                 <div className="collapse navbar-collapse justify-content-between">
                     <div className="header-left">
-                        <div className="dashboard_bar">Add Role</div>
+                        <div className="dashboard_bar">Edit Role</div>
                     </div>
                 </div>
             </nav>
@@ -80,6 +80,7 @@ function Editrole() {
 
                                     {/* setting a name from the input textfiled */}
                                     <Form.Group className="mb-3" controlId="formBasicRoleName">
+                                        <h5>Role Name</h5>
                                         <Form.Control value={RoleName}
                                             onChange={e => setRoleName(e.target.value)}
                                             type="text" placeholder="Enter Role Name" />
@@ -87,6 +88,7 @@ function Editrole() {
 
                                     {/* setting a age from the input textfiled */}
                                     <Form.Group className="mb-3" controlId="formBasicRoleDescription">
+                                    <h5>Role Description</h5>
                                         <Form.Control value={RoleDescription}
                                             onChange={e => setRoleDescription(e.target.value)}
                                             type="text" placeholder="Enter Role Description" />

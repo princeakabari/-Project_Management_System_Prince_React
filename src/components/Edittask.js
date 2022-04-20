@@ -81,6 +81,7 @@ function EditTask() {
 
                                     {/* setting a name from the input textfiled */}
                                     <Form.Group className="mb-3" controlId="formBasicTaskName">
+                                        <h5>Task Name:</h5>
                                         <Form.Control value={TaskName}
                                             onChange={e => setTaskName(e.target.value)}
                                             type="text" placeholder="Enter Task Name" />
@@ -88,6 +89,7 @@ function EditTask() {
 
                                     {/* setting a age from the input textfiled */}
                                     <Form.Group className="mb-3" controlId="formBasicTaskInfo">
+                                    <h5>Task Info:</h5>
                                         <Form.Control value={TaskInfo}
                                             onChange={e => setTaskInfo(e.target.value)}
                                             type="text" placeholder="Enter Task Info" />
@@ -95,6 +97,7 @@ function EditTask() {
 
                                    
                                     <Form.Group className="mb-3" controlId="formBasicTaskSuggestions">
+                                    <h5>Task Suggestions:</h5>
                                         <Form.Control value={TaskSuggestions}
                                             onChange={e => setTaskSuggestions(e.target.value)}
                                             type="text" placeholder=" Enter Task Suggestions" />

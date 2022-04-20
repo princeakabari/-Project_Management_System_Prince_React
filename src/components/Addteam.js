@@ -33,7 +33,7 @@ function AddTeam() {
       id: uni,
       TeamName: a,
       TeamMember: b,
-      PTechnology: c,
+      Technology: c,
       TeamSuggestions: d,
     });
 

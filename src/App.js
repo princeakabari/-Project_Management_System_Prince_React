@@ -27,6 +27,8 @@ import EditProjects from "./components/EditProjects";
 import EditTask from "./components/Edittask";
 import { Adminlogin } from "./components/Adminlogin";
 import Landing from "./components/Landing";
+import Editrole from "./components/Editrole";
+import Editteam from "./components/Editteam";
 
 
 
@@ -66,6 +68,8 @@ export default function App() {
        
         <Route path='EditProjects' element={<EditProjects/>}  />
         <Route path='Edittask' element={<EditTask/>}  />
+        <Route path='Editrole' element={<Editrole/>}  />
+        <Route path='Editteam' element={<Editteam/>}  />
         
        
       

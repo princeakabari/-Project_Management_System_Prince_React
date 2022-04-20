@@ -248,7 +248,7 @@ body {
 	font-size: .875rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #393939;
+	color: #000000;
 	background-color: #f8f8f8;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent
@@ -10843,7 +10843,8 @@ h6,
 }
 
 .content-body .container {
-	margin-top: 2.5rem
+	margin-top: 2.5rem;
+	
 }
 
 .content-body .container-fluid,
@@ -10855,6 +10856,7 @@ h6,
 	padding-top: 2.5rem;
 	padding-right: 2.5rem;
 	padding-left: 2.5rem
+	
 }
 
 @media only screen and (max-width:75rem) {
@@ -16386,7 +16388,7 @@ html[dir=rtl] [direction=rtl][data-sidebar-style=compact]:not([data-layout=horiz
 	
 	
 	outline-width: 0;
-	color: #759791;
+	color: #000000;
 	text-decoration: none;
 
 }
@@ -34969,9 +34971,10 @@ table.dataTable.display tbody td {
 }
 
 .authincation {
-	background: var(--rgba-primary-1);
+	background-color: #0000ff21;
 	display: flex;
 	min-height: 100vh
+
 }
 
 .authincation .login-aside {

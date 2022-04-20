@@ -21,7 +21,7 @@ function Addrole() {
         e.preventDefault();  // Prevent reload
 
         const ids = uuid() // Creating unique id
-        let uni = ids.slice(0, 8) // Slicing unique id
+        let uni = ids.slice(0, 4) // Slicing unique id
 
         // Fetching a value from usestate and 
         // pushing to javascript object
